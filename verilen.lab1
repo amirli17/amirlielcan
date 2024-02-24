@@ -1,0 +1,15 @@
+import math
+
+y = 0
+n = 1
+z = 1
+z1 = 1
+eps = 0.001
+
+while math.fabs(z) > eps:
+    y = y + z
+    z1 = z1 * n
+    z = (n + 2)/z1
+    n=n+1
+
+print(y)
